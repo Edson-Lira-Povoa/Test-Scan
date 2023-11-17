@@ -13,11 +13,12 @@ async function setupNodeEvents(on, config) {
 module.exports = defineConfig({
   e2e: {
     // BaseUrl e outras configurações do Cypress
-    baseUrl: 'https://scansource.com.br',
+    baseUrl: 'https://www.amazon.com.br',
     specPattern: ["**/*.feature", "cypress/e2e/**/*.cy.{js,jsx,ts,tsx}"],
     setupNodeEvents,
 
-    pageLoadTimeout: 60000,
-    defaultCommandTimeout: 4000
+    chromeWebSecurity:false,
+    PageLoadTimeout:30000,
+    defaultCommandTimeout: 20000,
   },
 });

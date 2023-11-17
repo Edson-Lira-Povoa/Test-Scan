@@ -1,8 +1,8 @@
 # language: pt
-Funcionalidade: acessar a pagina da scansource
+Funcionalidade: realizar login e efetuar compra na amazon
 
 Cenário: Acessar a página principal do scansource
-    Dado que eu estou na página do scansource
-    Quando realizo uma busca com a palavra videos
-    Então vizualizo o resultado da pesquisa
+    Dado que eu logo na pagina da amazon
+    Quando realizo uma busca e adiciono no carrinho
+    Então realizo a compra com sucesso
     

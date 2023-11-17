@@ -2,15 +2,15 @@ const { Given, When, Then } = require("@badeball/cypress-cucumber-preprocessor")
 import scanPage from '../pages/scan.pages';
 import resultPage from '../pages/result.pages';
 
-Given('que eu estou na página do scansource', () => {
+Given('que eu logo na pagina da amazon', () => {
     scanPage.visit();
 });
 
-When('realizo uma busca com a palavra videos', () =>{
+When('realizo uma busca e adiciono no carrinho', () =>{
 scanPage.buscar()
 });
 
-Then('vizualizo o resultado da pesquisa', ()=>{
+Then('realizo a compra com sucesso', ()=>{
 resultPage.resultado()
 
 });
